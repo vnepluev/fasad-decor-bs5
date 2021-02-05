@@ -1,0 +1,15 @@
+// Переменные с цветом до подключения переменных bootstrap
+@import "vars";
+
+
+// Bootstrap 5
+@import "../../../node_modules/bootstrap/dist/css/bootstrap";
+// аналог normalize.css
+@import "../../../node_modules/bootstrap/dist/css/bootstrap-reboot";
+
+// Шрифты
+@import "fonts";
+
+// Блоки страницы
+@import "blocks/_header.sass";
+@import "blocks/_production.sass";

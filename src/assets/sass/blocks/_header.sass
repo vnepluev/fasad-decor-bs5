@@ -1,0 +1,142 @@
+body
+    background: $background-color
+
+.link-hover
+    color: $links-color-hover !important
+.link-color
+    text-decoration: none
+    color: $links-color
+    &:hover
+        color: $links-color-hover
+
+// Фоновый цвет stiky-menu
+.navbar--black
+    background: $background-color
+
+.hr
+    width: 100%
+    height: 1px
+    border: none
+    background: $links-color-hover
+
+.navbar-brend:hover
+    color: $links-color
+
+.phone-icon
+    width: 14px
+    height: 14px
+    float: left
+    margin: 5px 3px 0 0
+
+.navbar-toggler--color
+    color: $texts-color
+    background: $background-color
+    border: 1px solid $texts-color
+
+.burger-icon
+    width: 24px
+    height: 24px
+
+#carouselHeader
+    margin-top: 58px
+
+.br-20
+    border-radius: 20px
+
+.btn1
+    display: inline-block
+    font-family: 'MuseoSans-500', sans-serif
+    letter-spacing: 0.1em
+    border: 1px solid $btn-color
+    border-radius: 50px
+    padding: 15px 54px
+    text-decoration: none
+    color: $btn-color
+    &--mt
+        margin-top: 30px
+    &:hover
+        background-color: $btn-bg-color
+        box-shadow: 0px 0px 30px $btn-boxshadow
+        color: $btn-text-color
+        transition: 0.6s
+
+.carousel-indicators--mb
+    bottom: -70px
+.carousel-indicators
+    li
+        width: 15px
+        height: 15px
+        background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' id='slider' width='15' height='15' viewBox='0 0 15 15' fill='none'%3E%3Crect width='5' height='5' rx='2.5' transform='matrix(1 0 0 -1 5 10)' fill='%23D6B47E' fill-opacity='0.5'/%3E%3Cpath d='M15 7.5C15 11.6421 11.6421 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5ZM0.13523 7.5C0.13523 11.5675 3.43255 14.8648 7.5 14.8648C11.5675 14.8648 14.8648 11.5675 14.8648 7.5C14.8648 3.43255 11.5675 0.13523 7.5 0.13523C3.43255 0.13523 0.13523 3.43255 0.13523 7.5Z' fill='%23D6B47E' fill-opacity='0.5'/%3E%3C/svg%3E")
+        .active
+            width: 15px
+            height: 15px
+            background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' id='sliderhover' width='15' height='15' viewBox='0 0 15 15' fill='none'%3E%3Crect width='15' height='15' rx='7.5' transform='matrix(1 0 0 -1 0 15)' fill='%23D6B47E'/%3E%3Crect width='5' height='5' rx='2.5' transform='matrix(1 0 0 -1 5 10)' fill='%231A1A1A'/%3E%3Cpath d='M15 7.5C15 11.6421 11.6421 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5ZM0.13523 7.5C0.13523 11.5675 3.43255 14.8648 7.5 14.8648C11.5675 14.8648 14.8648 11.5675 14.8648 7.5C14.8648 3.43255 11.5675 0.13523 7.5 0.13523C3.43255 0.13523 0.13523 3.43255 0.13523 7.5Z' fill='%23D6B47E' fill-opacity='0.5'/%3E%3C/svg%3E")
+
+// Шаги 1 2 3
+.steps
+    display: flex
+    justify-content: space-between
+    margin: 80px auto 0
+    &-block
+        display: flex
+        align-items: center
+        cursor: default
+        margin-bottom: 30px
+        &__number
+            position: relative
+            font-family: 'MuseoModerno-Medium', sans-serif
+            font-style: normal
+            font-weight: 500
+            font-size: 30px
+            letter-spacing: 0.05em
+            border: 1px solid $links-color-hover
+            border-radius: 50%
+            padding: 20px 29px
+            z-index: -1
+        &__text
+            position: relative
+            display: block
+            font-family: 'MuseoSans-500', sans-serif
+            font-size: 17px
+            line-height: 23px
+            letter-spacing: 0.05em
+            text-transform: uppercase
+            font-style: normal
+            font-weight: normal
+            padding: 2px 26px
+            margin-left: -20px
+            background-color: $background-color
+            color: $texts-color
+            z-index: 0
+
+// Медиазпросы
+@media (max-width: 992px)
+    body
+        font-size: 14px
+    #carouselHeader
+        margin-top: 34px
+    .h2
+        font-size: $h2-mobile
+        margin-bottom: 24px
+        line-height: 32px
+    .btn1
+        padding: 12px 30px
+    .btn1--mt
+        margin-top: 14px
+    .hero__left
+        margin-top: 16px
+        order: 2
+    .hero__right
+        order: 1
+    .steps-block
+        &__number
+            font-size: 26px
+        &__text
+            font-size: 14px
+
+@media ( max-width: 576px )
+    .steps-block
+        &__number
+            font-size: 24px
+        &__text
+            font-size: 14px

@@ -34,7 +34,7 @@ var path = {
     watch: {
         html: "src/**/*.html",
         js: "src/assets/js/**/*.js",
-        css: "src/assets/sass/**/*.scss",
+        css: "src/assets/sass/**/*.{scss,sass}",
         images: "src/assets/img/**/*.{jpg,png,svg,gif,ico}"
     },
     clean: "./dist"
@@ -109,10 +109,10 @@ function js() {
         .pipe(dest(path.build.js))
         .pipe(browsersync.stream());
 }
-
+//.pipe(imagemin())
 function images() {
     return src(path.src.images)
-        .pipe(imagemin())
+
         .pipe(dest(path.build.images));
 }
 

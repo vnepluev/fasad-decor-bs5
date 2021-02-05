@@ -1,0 +1,91 @@
+// Стилизуем кнопку "Подробнее"
+.production-button
+    display: flex
+    justify-content: center
+    margin: 32px auto 48px
+    &__svg
+        width: 15px
+        height: 16px
+.btn2
+    font-family: 'MuseoSans-500', sans-serif
+    font-size: 15px
+    letter-spacing: 0.05em
+    background: $background-color
+    border: $links-color-hover 1px solid
+    color: $links-color-hover
+    padding: 15px 47px
+    border-radius: 50px
+    text-transform: uppercase
+    outline: none
+    text-decoration: none
+    &:hover
+        box-shadow: 0px 0px 22px $btn-hover-boxshadow1
+        color: $links-color-hover
+        &:active
+            background: $btn-focus-textcolor
+            color: $btn-hover-textcolor
+
+.production
+    position: relative
+    &-content
+        margin-top: 50px
+        &__block1
+            display: flex
+            align-items: center
+        &__block2
+            display: flex
+            margin: 30px 0 25px
+        &__img1
+            border-radius: 10px
+            padding: 0
+            box-shadow: 0px 0px 22px $bg-catalog-color
+            object-fit: contain //cover
+        &__img2
+            border-radius: 10px
+            box-shadow: 0px 0px 22px $bg-catalog-color
+            object-fit: contain //cover
+        &__text1
+            padding: 0px 20px 0 60px
+        &__text2
+            padding: 20px 60px 0px 20px
+        &__block3
+            min-height: 540px // высота 3 скрытого блока
+    &-hover
+        max-height: 630px
+        overflow: hidden
+        position: relative
+        background: url('../img/bg-fon.png') center right no-repeat
+        &--active
+            max-height: none // делаем высоту блока по контенту
+        &::after
+            position: absolute
+            content: ''
+            bottom: 0
+            left: 0
+            width: 100%
+            height: 127px
+            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), $background-color 75%)
+            pointer-events: none
+
+@media (max-width: 1400px)
+    .h3
+        font-size: 20px
+    .production-content
+        &__text1
+            padding: 0px 20px 0 50px
+        &__text2
+            padding: 20px 20px 0 20px
+
+    // .production-content
+    //     &__block2
+    //         margin-top: 10px
+    //         left: 170px
+    //     &__img2
+    //         z-index: 1
+    //     &__text2
+    //         margin-right: 160px
+
+@media (max-width: 1200px)
+    .production-content
+        &__text1
+            padding: 25px
