@@ -5,11 +5,12 @@
 2) Чтобы скрыть блок на xs используйте связку классов d-none d-sm-block - блок будет скрыт на xs и виден на всех
 остальных размерах
 <span class="d-md-none d-lg-inline-block">fasad-decor-moscow</span>
+3) sticky-top - закрепляет область в секции, fixed-top - закрепляет область на всем сайте
+используется для фиксирования меню
  -->
 
 <header class="header container" id="header">
-
-    <nav class="navbar navbar--black navbar-expand-lg sticky-top">
+    <nav class="container navbar navbar--black navbar-expand-lg fixed-top">
         <div class="container-fluid">
             <a href="#header" class="link-color text-nowrap">
                 <span class="link-hover">FDM |</span> fasad-decor-moscow
@@ -50,115 +51,115 @@
             </div>
         </div>
     </nav>
+
     <hr class="hr" />
 
     <!-- Слайдер -->
-    <main>
-        <div id="carouselHeader" class="carousel slide" data-bs-ride="carousel">
-            <ol class="carousel-indicators carousel-indicators--mb">
-                <li data-bs-target="#carouselHeader" data-bs-slide-to="0" class="active bg-transparent"></li>
-                <li data-bs-target="#carouselHeader" data-bs-slide-to="1" class="bg-transparent"></li>
-                <li data-bs-target="#carouselHeader" data-bs-slide-to="2" class="bg-transparent"></li>
-                <li data-bs-target="#carouselHeader" data-bs-slide-to="3" class="bg-transparent"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="d-flex align-items-center row">
-                        <div class="hero__left col-xs-12 col-md-12 col-lg-6">
-                            <!-- левая часть -->
-                            <h2 class="h2">
-                                Изготовление <span class="link-hover">и</span> установка
-                                элементов фасадного декора
-                            </h2>
-                            <p class="p">
-                                Часто возникает необходимость оформить различные части
-                                здания при помощи фасадного декора из пенопласта. Мы
-                                стараемся обеспечить разнообразие декора для отделки
-                                фасадов.
-                            </p>
-                            <a href="#" class="btn1 btn1--mt">Заказать звонок</a>
-                        </div>
-                        <!-- правая часть -->
-                        <div class="hero__right col-xs-12 col-md-12 col-lg-6">
-                            <img class="d-block w-100 br-20" src="img/slider/slider-1.jpg" alt="" />
-                        </div>
+    <div id="carouselHeader" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators carousel-indicators--mb">
+            <li data-bs-target="#carouselHeader" data-bs-slide-to="0" class="active bg-transparent"></li>
+            <li data-bs-target="#carouselHeader" data-bs-slide-to="1" class="bg-transparent"></li>
+            <li data-bs-target="#carouselHeader" data-bs-slide-to="2" class="bg-transparent"></li>
+            <li data-bs-target="#carouselHeader" data-bs-slide-to="3" class="bg-transparent"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="d-flex align-items-center row">
+                    <div class="hero__left col-xs-12 col-md-12 col-lg-6">
+                        <!-- левая часть -->
+                        <h2 class="h2">
+                            Изготовление <span class="link-hover">и</span> установка
+                            элементов фасадного декора
+                        </h2>
+                        <p class="p">
+                            Часто возникает необходимость оформить различные части
+                            здания при помощи фасадного декора из пенопласта. Мы
+                            стараемся обеспечить разнообразие декора для отделки
+                            фасадов.
+                        </p>
+                        <a href="#" class="btn1 btn1--mt">Заказать звонок</a>
                     </div>
-                </div>
-
-                <div class="carousel-item">
-                    <div class="d-flex align-items-center row">
-                        <div class="hero__left col-xs-12 col-md-12 col-lg-6">
-                            <!-- левая часть -->
-                            <h2 class="h2">
-                                <span class="link-hover">бесплатное</span> хранение на
-                                теплом складе в зимний период
-                            </h2>
-                            <p class="p">
-                                Часто возникает необходимость оформить различные части
-                                здания при помощи фасадного декора из пенопласта. Мы
-                                стараемся обеспечить разнообразие декора для отделки
-                                фасадов.
-                            </p>
-                            <a href="#" class="btn1 btn1--mt">Заказать звонок</a>
-                        </div>
-                        <!-- правая часть -->
-                        <div class="hero__right col-xs-12 col-md-12 col-lg-6">
-                            <img class="d-block w-100 br-20" src="img/slider/slider-2.jpg" alt="" />
-                        </div>
-                    </div>
-                </div>
-
-                <div class="carousel-item">
-                    <div class="d-flex align-items-center row">
-                        <!-- Тело блока -->
-                        <div class="hero__left col-xs-12 col-md-12 col-lg-6">
-                            <!-- левая часть -->
-                            <h2 class="h2">
-                                Замер и 3d визуализация
-                                <span class="link-hover">в&nbsp;подарок</span>
-                            </h2>
-                            <p class="p">
-                                Часто возникает необходимость оформить различные части
-                                здания при помощи фасадного декора из пенопласта. Мы
-                                стараемся обеспечить разнообразие декора для отделки
-                                фасадов.
-                            </p>
-                            <a href="#" class="btn1 btn1--mt">Заказать звонок</a>
-                        </div>
-                        <!-- правая часть -->
-                        <div class="hero__right col-xs-12 col-md-12 col-lg-6">
-                            <img class="d-block w-100 br-20" src="img/slider/slider-3.jpg" alt="" />
-                        </div>
-                        <!-- /Тело блока -->
-                    </div>
-                </div>
-
-                <div class="carousel-item">
-                    <div class="d-flex align-items-center row">
-                        <!-- Тело блока -->
-                        <div class="hero__left col-xs-12 col-md-12 col-lg-6">
-                            <!-- левая часть -->
-                            <h2 class="h2">
-                                При заказе <span class="link-hover">от</span>&nbsp;50&nbsp;000&nbsp;руб.
-                                доставка бесплатно
-                            </h2>
-                            <p class="p">
-                                Часто возникает необходимость оформить различные части
-                                здания при помощи фасадного декора из пенопласта. Мы
-                                стараемся обеспечить разнообразие декора для отделки
-                                фасадов.
-                            </p>
-                            <a href="#" class="btn1 btn1--mt">Заказать звонок</a>
-                        </div>
-                        <!-- правая часть -->
-                        <div class="hero__right col-xs-12 col-md-12 col-lg-6">
-                            <img class="d-block w-100 br-20" src="img/slider/slider-4.jpg" alt="" />
-                        </div>
-                        <!-- /Тело блока -->
+                    <!-- правая часть -->
+                    <div class="hero__right col-xs-12 col-md-12 col-lg-6">
+                        <img class="d-block w-100 br-20" src="img/slider/slider-1.jpg" alt="" />
                     </div>
                 </div>
             </div>
-            <!-- <a class="carousel-control-prev" href="#carouselHeader" role="button" data-bs-slide="prev">
+
+            <div class="carousel-item">
+                <div class="d-flex align-items-center row">
+                    <div class="hero__left col-xs-12 col-md-12 col-lg-6">
+                        <!-- левая часть -->
+                        <h2 class="h2">
+                            <span class="link-hover">бесплатное</span> хранение на
+                            теплом складе в зимний период
+                        </h2>
+                        <p class="p">
+                            Часто возникает необходимость оформить различные части
+                            здания при помощи фасадного декора из пенопласта. Мы
+                            стараемся обеспечить разнообразие декора для отделки
+                            фасадов.
+                        </p>
+                        <a href="#" class="btn1 btn1--mt">Заказать звонок</a>
+                    </div>
+                    <!-- правая часть -->
+                    <div class="hero__right col-xs-12 col-md-12 col-lg-6">
+                        <img class="d-block w-100 br-20" src="img/slider/slider-2.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="d-flex align-items-center row">
+                    <!-- Тело блока -->
+                    <div class="hero__left col-xs-12 col-md-12 col-lg-6">
+                        <!-- левая часть -->
+                        <h2 class="h2">
+                            Замер и 3d визуализация
+                            <span class="link-hover">в&nbsp;подарок</span>
+                        </h2>
+                        <p class="p">
+                            Часто возникает необходимость оформить различные части
+                            здания при помощи фасадного декора из пенопласта. Мы
+                            стараемся обеспечить разнообразие декора для отделки
+                            фасадов.
+                        </p>
+                        <a href="#" class="btn1 btn1--mt">Заказать звонок</a>
+                    </div>
+                    <!-- правая часть -->
+                    <div class="hero__right col-xs-12 col-md-12 col-lg-6">
+                        <img class="d-block w-100 br-20" src="img/slider/slider-3.jpg" alt="" />
+                    </div>
+                    <!-- /Тело блока -->
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="d-flex align-items-center row">
+                    <!-- Тело блока -->
+                    <div class="hero__left col-xs-12 col-md-12 col-lg-6">
+                        <!-- левая часть -->
+                        <h2 class="h2">
+                            При заказе <span class="link-hover">от</span>&nbsp;50&nbsp;000&nbsp;руб.
+                            доставка бесплатно
+                        </h2>
+                        <p class="p">
+                            Часто возникает необходимость оформить различные части
+                            здания при помощи фасадного декора из пенопласта. Мы
+                            стараемся обеспечить разнообразие декора для отделки
+                            фасадов.
+                        </p>
+                        <a href="#" class="btn1 btn1--mt">Заказать звонок</a>
+                    </div>
+                    <!-- правая часть -->
+                    <div class="hero__right col-xs-12 col-md-12 col-lg-6">
+                        <img class="d-block w-100 br-20" src="img/slider/slider-4.jpg" alt="" />
+                    </div>
+                    <!-- /Тело блока -->
+                </div>
+            </div>
+        </div>
+        <!-- <a class="carousel-control-prev" href="#carouselHeader" role="button" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Предыдущий</span>
             </a>
@@ -166,8 +167,7 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Следующий</span>
             </a> -->
-        </div>
-    </main>
+    </div>
     <!-- /Слайдер -->
 
 
@@ -191,6 +191,7 @@
             </div>
         </div>
     </div>
+
     <hr class="hr" />
 </header>
 

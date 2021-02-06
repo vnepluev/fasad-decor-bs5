@@ -67,6 +67,11 @@
             background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), $background-color 75%)
             pointer-events: none
 
+.production-slider
+    text-align: center
+    &__img
+        margin-bottom: 25px
+
 @media (max-width: 1400px)
     .h3
         font-size: 20px
@@ -88,4 +93,20 @@
 @media (max-width: 1200px)
     .production-content
         &__text1
-            padding: 25px
+            padding: 25px 25px 0px 35px
+        &__text2
+            padding: 25px 25px 25px 0px
+        &__block2
+            margin: 0 0 25px
+        &__img1, &__img2
+            border-radius: 0
+            box-shadow: none
+            width: 100%
+    .production-slider__img
+        width: 100%
+
+@media (max-width: 768px)
+    .btn2
+        &:hover
+            box-shadow: none
+            color: $links-color-hover
