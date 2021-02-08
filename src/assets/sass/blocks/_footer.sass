@@ -1,0 +1,64 @@
+.footer
+    &-right
+        padding: 0 20px
+    &__link, &__link1
+        font-family: 'MuseoSans-300', sans-serif
+        text-decoration: none
+        font-size: 17px
+        line-height: 23px
+        letter-spacing: 0.05em
+        color: $links-color-hover
+        &:hover
+            color: $links-color-hover
+    &__link1
+        margin-left: 15px
+        &:hover
+            color: $links-color-hover
+
+.footer-right
+    &__svg, &__svg1
+        width: 15px
+        height: 15px
+        margin-right: 15px
+    &__svg1
+        margin-right: 5px
+
+.footer-bottom
+    display: flex
+    justify-content: space-between
+    margin-top: 24px
+    &__link
+        font-family: 'MuseoSans-100', sans-serif
+        text-decoration: none
+        font-size: 17px
+        line-height: 23px
+        letter-spacing: 0.05em
+        color: $texts-color
+        &:hover
+            color: $links-color-hover
+
+.footer__map
+    border: none
+    width: 100%
+    height: 400px
+
+@media(max-width: 900px)
+    .footer
+        margin: 40px auto
+    .footer-bottom
+        padding: 0 10px
+
+@media(max-width: 761px)
+    .footer
+        &-right
+            width: 100%
+        &-bottom
+            width: 70vh
+
+@media(max-width: 576px)
+    .footer__map
+        height: 320px
+    .footer__link, .footer__link1
+        font-size: 14px
+    .footer-bottom__link
+        font-size: 14px
