@@ -1,0 +1,115 @@
+<!-- Отзывы клиентов -->
+<section class="review container mt-5" id="review">
+  <h2 class="h3 mb-5">
+    <span class="link-hover">Отзывы</span> клиентов
+  </h2>
+
+  <!-- на экранах больше 768px -->
+  <div class="review-block">
+    <div class="review-block-lg">
+      <a class="review-block__item">
+        <img data-bs-toggle="modal" data-bs-target="#reviewModal1" src="img/review/review-1.jpg" alt=""
+          class="review-block__image" />
+      </a>
+      <a class="review-block__item">
+        <img data-bs-toggle="modal" data-bs-target="#reviewModal2" src="img/review/review-1.jpg" alt=""
+          class="review-block__image" />
+      </a>
+      <a class="review-block__item">
+        <img data-bs-toggle="modal" data-bs-target="#reviewModal3" src="img/review/review-1.jpg" alt=""
+          class="review-block__image" />
+      </a>
+    </div>
+
+    <!-- на экранах меньше 768px -->
+    <div class="review-block-md">
+      <!-- Слайдер -->
+      <div id="reviewCarousel" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators carousel-indicators--mb">
+          <li data-bs-target="#reviewCarousel" data-bs-slide-to="0" class="active bg-transparent"></li>
+          <li data-bs-target="#reviewCarousel" data-bs-slide-to="1" class="bg-transparent"></li>
+          <li data-bs-target="#reviewCarousel" data-bs-slide-to="2" class="bg-transparent"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img data-bs-toggle="modal" data-bs-target="#reviewModal1" class="d-block w-100"
+              src="img/review/review-1.jpg" alt="" />
+          </div>
+          <div class="carousel-item">
+            <img data-bs-toggle="modal" data-bs-target="#reviewModal2" class="d-block w-100"
+              src="img/review/review-1.jpg" alt="" />
+          </div>
+          <div class="carousel-item">
+            <img data-bs-toggle="modal" data-bs-target="#reviewModal3" class="d-block w-100"
+              src="img/review/review-1.jpg" alt="" />
+          </div>
+        </div>
+        <!-- <a class="carousel-control-prev" href="#reviewCarousel" role="button" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Предыдущий</span>
+                      </a>
+                      <a class="carousel-control-next" href="#reviewCarousel" role="button" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Следующий</span>
+                      </a> -->
+      </div>
+      <!-- /Слайдер -->
+    </div>
+  </div>
+
+  <!-- Modal 1 -->
+  <div class="modal fade" id="reviewModal1" tabindex="-1" aria-labelledby="reviewModalLabel1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="reviewModalLabel1">Отзывы клиентов</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body col-12 col-sm-6 col-md-10 col-lg-12">
+          <img class="w-100" src="img/review/review-1.jpg" alt="">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2 -->
+  <div class="modal fade" id="reviewModal2" tabindex="-1" aria-labelledby="reviewModalLabel2" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="reviewModalLabel2">Отзывы клиентов</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body col-12 col-sm-6 col-md-10 col-lg-12">
+          <img class="w-100" src="img/review/review-1.jpg" alt="">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3 -->
+  <div class="modal fade" id="reviewModal3" tabindex="-1" aria-labelledby="reviewModalLabel3" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="reviewModalLabel3">Отзывы клиентов</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body col-12 col-sm-6 col-md-10 col-lg-12">
+          <img class="w-100" src="img/review/review-1.jpg" alt="">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="hr mt-5">
+</section>

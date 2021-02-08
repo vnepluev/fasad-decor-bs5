@@ -11,6 +11,6 @@
 // ../../../node_modules/bootstrap/js/dist/dom/manipulator.js
 // ../../../node_modules/bootstrap/js/dist/dom/selector-engine.js
 
-//= ../../../node_modules/bootstrap/dist/js/bootstrap.js
+// ../../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js
 
 //= components/main.js

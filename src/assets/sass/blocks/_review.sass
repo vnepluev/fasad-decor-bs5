@@ -1,0 +1,40 @@
+// Отзывы клиентов
+.review
+    margin: 67px auto
+    background: url('../img/bg-fon.png') center center no-repeat
+
+.review-block-lg, .review-block-md
+    display: none
+    justify-content: center
+    padding: 30px 0
+.review-block-lg
+    display: flex
+
+.review-block
+    &__item
+        display: block
+        padding-right: 32px
+        &:last-child
+            padding-right: 0
+    &__image
+        border-radius: 15px
+        cursor: pointer
+        width: 350px
+
+@media(max-width: 1290px)
+    .review-block__image
+        width: 260px
+
+@media(max-width: 1200px)
+    .review-block__image
+        width: 220px
+
+@media(max-width: 992px)
+    .review-block__item
+        padding-right: 6px
+
+@media(max-width: 768px)
+    .review-block-lg
+        display: none
+    .review-block-md
+        display: flex
