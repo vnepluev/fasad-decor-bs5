@@ -8,8 +8,8 @@
     &-callme
         margin: 65px auto 41px
     &--btn
-        margin-bottom: 67px
         text-align: center
+        margin: 0 auto
 
 .schema-section
     &--title
@@ -58,7 +58,7 @@
         margin-top: 5px
         cursor: default
 
-@media(max-width: 900px)
+@media(max-width: 1200px)
     .schema
         margin: 40px auto
     .schema-section
@@ -71,3 +71,34 @@
             width: 80%
             padding: 30px 0
             margin-right: 5px
+
+@media(max-width: 768px)
+    .h4
+        font-size: 14px
+    .schema-section__text
+        font-size: 10px
+
+@media(max-width: 576px)
+    .schema-section
+        flex-direction: column
+        &__block2
+            width: 10px
+            height: 10px
+        &__block3
+            width: 150px
+            flex-direction: column
+            margin-right: 0
+        &__sub-blocks
+            width: 100%
+            padding-bottom: 50px
+        &__sub-blocks:last-child
+            padding-bottom: 0
+        &__sub-blocks::after
+            right: auto
+            top: 62%
+            min-width: 2px
+            min-height: 20px
+        &__text
+            font-size: 14px
+    .h4
+        font-size: 16px
