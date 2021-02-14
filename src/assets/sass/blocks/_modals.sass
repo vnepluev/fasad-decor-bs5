@@ -1,0 +1,62 @@
+.modal-content
+    background-color: $background-color
+    outline: none
+    border: 1px solid $links-color-hover
+    border-radius: 20px
+    padding-bottom: 0.5rem
+
+.btn-close
+    color: $links-color-hover
+    background: none
+    opacity: 1
+.btn1--popup
+    font-size: 14px
+
+.modal-body__img
+    width: 100%
+    border-radius: 20px
+
+.popup-form
+    margin-top: 38px
+    &--input
+        width: 80%
+        margin-bottom: 11px
+        font-family: 'MuseoSans-100', sans-serif
+        font-size: 16px
+        letter-spacing: 0.05em
+        border-radius: 50px
+        background: none
+        padding: 14px 52px 14px 39px
+        border: $links-color-hover 1px solid
+        color: $links-color-hover
+        &:focus
+            outline: none
+
+    &--btn
+        margin-top: 34px
+
+.modal-header
+    border: none
+    padding-bottom: 0
+
+@media (max-width: 1200px)
+    .h5
+        font-size: 16px
+        line-height: 30px
+        margin-bottom: 0
+    .popup-form--input
+        padding: 10px 36px 10px 34px
+    .popup-form
+        margin-top: 0.5rem
+    .btn1--popup
+        padding: 12px 46px
+
+@media (max-width: 992px)
+    .h5
+        margin-top: 1rem
+    .popup-form--input
+        width: 100%
+
+@media (max-width: 768px)
+    .btn1--popup, .popup-form
+        margin-top: 1rem
