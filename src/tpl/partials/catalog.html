@@ -6,7 +6,8 @@
 
     <div class="catalog-items catalog-items--margin">
         <!-- Блок с товаром -->
-        <a href="#" class="catalog-items__link" id="catalog-items__link1">
+        <a href="#" class="catalog-items__link" id="catalog-items__link1" data-bs-toggle="modal"
+            data-bs-target="#callme-cat">
             <div class="catalog-items__block">
                 <img src="img/catalog/fasad-decor.png" alt="" class="catalog-items__image" />
                 <div class="catalog-items__text">
@@ -20,7 +21,8 @@
         <!-- ./Блок с товаром -->
 
         <!-- Блок с товаром -->
-        <a href="#" class="catalog-items__link" id="catalog-items__link2">
+        <a href="#" class="catalog-items__link" id="catalog-items__link2" data-bs-toggle="modal"
+            data-bs-target="#callme-cat">
             <div class="catalog-items__block">
                 <img src="img/catalog/decor.png" alt="" class="catalog-items__image" />
                 <div class="catalog-items__text">
@@ -34,7 +36,8 @@
         <!-- ./Блок с товаром -->
 
         <!-- Блок с товаром -->
-        <a href="#" class="catalog-items__link" id="catalog-items__link3">
+        <a href="#" class="catalog-items__link" id="catalog-items__link3" data-bs-toggle="modal"
+            data-bs-target="#callme-cat">
             <div class="catalog-items__block">
                 <img src="img/catalog/item-1.png" alt="" class="catalog-items__image" />
                 <div class="catalog-items__text">
@@ -48,7 +51,8 @@
         <!-- ./Блок с товаром -->
 
         <!-- Блок с товаром -->
-        <a href="#" class="catalog-items__link" id="catalog-items__link4">
+        <a href="#" class="catalog-items__link" id="catalog-items__link4" data-bs-toggle="modal"
+            data-bs-target="#callme-cat">
             <div class="catalog-items__block">
                 <img src="img/catalog/lepnina.png" alt="" class="catalog-items__image" />
                 <div class="catalog-items__text">
@@ -62,7 +66,8 @@
         <!-- ./Блок с товаром -->
 
         <!-- Блок с товаром -->
-        <a href="#" class="catalog-items__link" id="catalog-items__link5">
+        <a href="#" class="catalog-items__link" id="catalog-items__link5" data-bs-toggle="modal"
+            data-bs-target="#callme-cat">
             <div class="catalog-items__block">
                 <img src="img/catalog/kamin.png" alt="" class="catalog-items__image" />
                 <div class="catalog-items__text">
@@ -76,7 +81,8 @@
         <!-- ./Блок с товаром -->
 
         <!-- Блок с товаром -->
-        <a href="#" class="catalog-items__link" id="catalog-items__link6">
+        <a href="#" class="catalog-items__link" id="catalog-items__link6" data-bs-toggle="modal"
+            data-bs-target="#callme-cat">
             <div class="catalog-items__block">
                 <img src="img/catalog/ballustrada.png" alt="" class="catalog-items__image" />
                 <div class="catalog-items__text">
@@ -96,11 +102,10 @@
     </div>
 
     <div class="catalog-form">
-        <form action="#" method="post">
-            <input name="email" autocomplete="on" value="" placeholder="Введите e-mail" minlength="6" maxlength="254"
-                class="catalog-form__input" required />
-            <input type="submit" class="catalog-form__btn" value="Отправить" />
-        </form>
+        <input type="text" id="catalog-form__email" name="email" autocomplete="on" value="" placeholder="Введите e-mail"
+            minlength="6" maxlength="254" class="catalog-form__input" required>
+        <input type="button" id="catalog-form__btn" class="catalog-form__btn" value="Отправить" data-bs-toggle="modal"
+            data-bs-target="#callme-cat">
     </div>
 
     <hr class="hr">
