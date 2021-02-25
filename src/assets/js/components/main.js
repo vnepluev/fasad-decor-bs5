@@ -30,3 +30,43 @@ btnCatalogSubmit.onclick = function (e) {
     callMeCatEmail.value = catalogEmail.value;
     callMeCat.show;
 }
+
+//
+// Маска ввода для поля tel (зависит от inputmask.min.js)
+//
+let inputPhone = document.querySelectorAll('input[type="tel"]');
+let inputPhoneMask = new Inputmask('+7 (999) 999-99-99');
+inputPhoneMask.mask(inputPhone);
+
+//
+// Валидация и отправка форм (зависит от just-validate.min.js)
+//
+let phpMailPath = 'https://fasad-decor-moscow.ru/php-mail/mail.php';
+let validateForms = function (selector, rules, successModal, yaGoal) {
+    // selector - класс формы, rules - объект с правилами,
+    // successModal - когда успех, yaGoal - цель Я.метрики
+    new window.JustValidate(selector, {
+        rules: rules,
+        submitHandler: function (form) {
+            let formData = new FormData(form);
+
+            let xhr = new XMLHttpRequest();
+
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4) {
+                    if (xhr.status === 200) {
+                        console.log('Письмо отправлено');
+                    }
+                }
+            }
+
+            xhr.open('POST', phpMailPath, true);
+            xhr.send(formData);
+            form.reset();
+        }
+    })
+}
+
+// id: popup-form-catalog - форма с запросом каталога
+// id: popup-form-tel - форма обратного звонка
+validateForms('#popup-form-tel', { email: { required: true, email: true }, tel: { required: true } }, '.thanks-popup', 'send goal');

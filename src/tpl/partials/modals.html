@@ -14,12 +14,14 @@
                     <!-- правая часть -->
                     <h2 class="h5"><span class="link-hover">закажите</span> обратный звонок - перезвоним!
                     </h2>
-                    <form action="https://fasad-decor-moscow.ru/php-mail/mail.php" method="POST" class="popup-form">
+                    <form id="popup-form-tel" class="popup-form"
+                        action="https://fasad-decor-moscow.ru/php-mail/mail.php" method="POST">
                         <input class="form__input popup-form--input" type="text" name="client-name"
                             placeholder="Ваше имя" minlength="3" maxlength="128" required />
                         <input class="form__input popup-form--input" type="tel" name="client-phone"
-                            placeholder="Телефон для связи" minlength="6" maxlength="30" required />
-                        <input type="submit" class="btn1 btn1--popup mt-md-2 mt-xl-3">Заказать звонок</input>
+                            data-validate-field="tel" placeholder="Телефон для связи" minlength="6" maxlength="30"
+                            required />
+                        <input type="submit" class="btn1 btn1--popup mt-md-2 mt-xl-3" value="Заказать звонок"></input>
                     </form>
                 </div>
             </div>
@@ -43,13 +45,16 @@
                     <!-- правая часть -->
                     <h2 class="h5"><span class="link-hover">закажите</span> каталог товара. Консультация бесплатна!
                     </h2>
-                    <form action="https://fasad-decor-moscow.ru/php-mail/mail.php" method="POST" class="popup-form">
+                    <form id="popup-form-catalog" class="popup-form"
+                        action="https://fasad-decor-moscow.ru/php-mail/mail.php" method="POST">
                         <input class="form__input popup-form--input" type="text" name="client-name"
                             placeholder="Ваше имя" minlength="3" maxlength="128" required />
                         <input class="form__input popup-form--input" type="tel" name="client-phone"
-                            placeholder="Телефон для связи" minlength="6" maxlength="30" required />
+                            data-validate-field="tel" placeholder="Телефон для связи" minlength="6" maxlength="30"
+                            required />
                         <input id="callme-cat-email" class="form__input popup-form--input" type="email"
-                            name="client-phone" placeholder="e-mail" minlength="6" maxlength="255" required />
+                            data-validate-field="email" name="client-email" placeholder="e-mail" minlength="6"
+                            maxlength="255" required />
                     </form>
                 </div>
             </div>

@@ -13,4 +13,10 @@
 
 // ../../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js
 
+// Подключаем маску для input[type=tel]
+//= components/inputmask.min.js
+
+// Плагин валидации форм
+//= components/just-validate.min.js
+
 //= components/main.js
