@@ -16,8 +16,8 @@
                     </h2>
                     <form id="popup-form-tel" class="popup-form"
                         action="https://fasad-decor-moscow.ru/php-mail/mail.php" method="POST">
-                        <input class="form__input popup-form--input" type="text" name="client-name"
-                            placeholder="Ваше имя" minlength="3" maxlength="128" required />
+                        <input class="form__input popup-form--input" type="text" data-validate-field="cname"
+                            name="client-name" placeholder="Ваше имя" minlength="3" maxlength="128" required />
                         <input class="form__input popup-form--input" type="tel" name="client-phone"
                             data-validate-field="tel" placeholder="Телефон для связи" minlength="6" maxlength="30"
                             required />
@@ -32,36 +32,38 @@
 <!-- modal #callme-cat -->
 <div class="modal fade" id="callme-cat" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть">&times;</button>
-            </div>
-            <div class="modal-body row">
-                <div class="modal-body__left col-12 col-lg-6">
-                    <!-- левая часть -->
-                    <img class="modal-body__img" src="img/modal/operator.jpg" alt="">
-                </div>
-                <div class="modal-body__right col-12 col-lg-6 pt-xl-3">
-                    <!-- правая часть -->
-                    <h2 class="h5"><span class="link-hover">закажите</span> каталог товара. Консультация бесплатна!
-                    </h2>
-                    <form id="popup-form-catalog" class="popup-form"
-                        action="https://fasad-decor-moscow.ru/php-mail/mail.php" method="POST">
-                        <input class="form__input popup-form--input" type="text" name="client-name"
-                            placeholder="Ваше имя" minlength="3" maxlength="128" required />
+        <form id="popup-form-catalog" class="popup-form" action="https://fasad-decor-moscow.ru/php-mail/mail.php"
+            method="POST">
+            <div class="modal-content">
+                <div class="modal-body row">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                            aria-label="Закрыть">&times;</button>
+                    </div>
+                    <div class="modal-body__left col-12 col-lg-6">
+                        <!-- левая часть -->
+                        <img class="modal-body__img" src="img/modal/operator.jpg" alt="">
+                    </div>
+                    <div class="modal-body__right col-12 col-lg-6 pt-xl-3">
+                        <!-- правая часть -->
+                        <h2 class="h5"><span class="link-hover">закажите</span> каталог товара. Консультация бесплатна!
+                        </h2>
+                        <input class="form__input popup-form--input" type="text" data-validate-field="cname"
+                            name="client-name" placeholder="Ваше имя" minlength="3" maxlength="128" required />
                         <input class="form__input popup-form--input" type="tel" name="client-phone"
                             data-validate-field="tel" placeholder="Телефон для связи" minlength="6" maxlength="30"
                             required />
                         <input id="callme-cat-email" class="form__input popup-form--input" type="email"
                             data-validate-field="email" name="client-email" placeholder="e-mail" minlength="6"
                             maxlength="255" required />
-                    </form>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <a href="#" class="btn1 btn1--popup mt-md-2 mt-xl-3">Заказать каталог</a>
-                <a href="#" class="btn1 btn1--popup mt-md-2 mt-xl-3" data-bs-dismiss="modal">Закрыть</a>
-            </div>
-        </div>
+                    </div>
+        </form>
     </div>
+    <div class="modal-footer">
+        <input type="submit" class="btn1 btn1--popup mt-md-2 mt-xl-3" value="Заказать каталог"></input>
+        <a href="#" class="btn1 btn1--popup mt-md-2 mt-xl-3" data-bs-dismiss="modal">Закрыть</a>
+    </div>
+    </form>
+</div>
+</div>
 </div>

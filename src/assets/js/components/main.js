@@ -55,7 +55,9 @@ let validateForms = function (selector, rules, successModal, yaGoal) {
             xhr.onreadystatechange = function () {
                 if (xhr.readyState === 4) {
                     if (xhr.status === 200) {
-                        console.log('Письмо отправлено');
+                        let myModalEl = document.querySelector('.show');
+                        let modal = bootstrap.Modal.getInstance(myModalEl);
+                        modal.hide();
                     }
                 }
             }
@@ -69,4 +71,6 @@ let validateForms = function (selector, rules, successModal, yaGoal) {
 
 // id: popup-form-catalog - форма с запросом каталога
 // id: popup-form-tel - форма обратного звонка
-validateForms('#popup-form-tel', { email: { required: true, email: true }, tel: { required: true } }, '.thanks-popup', 'send goal');
+validateForms('#popup-form-tel', { tel: { required: true }, cname: { required: true }}, '.thanks-popup', 'send goal');
+validateForms('#popup-form-catalog', { email: { required: true, email: true }, tel: { required: true }, cname: { required: true } }, '.thanks-popup', 'send goal');
+
