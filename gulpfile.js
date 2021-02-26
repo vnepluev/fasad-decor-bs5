@@ -8,6 +8,7 @@ const removeComments = require('gulp-strip-css-comments');
 const rename = require("gulp-rename");
 const sass = require("gulp-sass");
 const cssnano = require("gulp-cssnano");
+const htmlmin = require('gulp-htmlmin');
 const rigger = require("gulp-rigger");
 const uglify = require("gulp-uglify");
 const plumber = require("gulp-plumber");
@@ -70,6 +71,10 @@ function html() {
             helpers: 'src/tpl/helpers/',
             data: 'src/tpl/data/'
         }))
+        .pipe(htmlmin({
+            collapseWhitespace: true,
+            removeComments: true
+            }))
         .pipe(dest(path.build.html))
         .pipe(browsersync.stream());
 }
@@ -115,7 +120,6 @@ function js() {
 //.pipe(imagemin())
 function images() {
     return src(path.src.images)
-
         .pipe(dest(path.build.images));
 }
 
