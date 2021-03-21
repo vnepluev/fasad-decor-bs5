@@ -5,6 +5,15 @@ body
     letter-spacing: 0.032em
     font-size: 18px
 
+button
+    background-color: rgba(0, 0, 0,0.2)
+    &:focus
+        outline: none
+
+.navbar-toggler
+    &:focus
+        box-shadow: 0 0 0 0rem !important
+
 .link-hover
     color: $links-color-hover !important
 .link-color
@@ -13,9 +22,9 @@ body
     &:hover
         color: $links-color-hover
 
-// Фоновый цвет stiky-menu
-.navbar--black
-    background: $background-color
+.link-color--logo
+    &:hover
+        color: $links-color
 
 .hr
     width: 100%
@@ -38,7 +47,7 @@ body
 .navbar-toggler--color
     color: $texts-color
     background: $background-color
-    border: 1px solid $texts-color
+    outline: none
 
 .burger-icon
     width: 24px
@@ -123,7 +132,7 @@ body
 // Медиазпросы
 @media (max-width:  1400px)
     body
-        font-size: 16px
+        font-size: 17px
 
 @media (max-width: 1200px)
     .btn1
