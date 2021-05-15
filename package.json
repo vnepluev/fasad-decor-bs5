@@ -21,6 +21,7 @@
         "panini": "^1.6.3"
     },
     "dependencies": {
-        "bootstrap": "^5.0.0-beta1"
+        "bootstrap": "^5.0.0-beta1",
+        "node-sass": "4.14"
     }
 }
